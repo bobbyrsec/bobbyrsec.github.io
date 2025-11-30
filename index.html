@@ -497,37 +497,57 @@
     </section>
     
 
-    <section id="certifications" class="py-20 bg-dark-bg border-t border-brand-900">
+   <section id="certifications" class="py-20 bg-dark-bg border-t border-brand-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-brand-500 mb-4">Certifications</h2>
                 <p class="text-readable-text">Validated industry credentials in offensive security</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
-
+            <!-- Flex container for centering and spacing the cards -->
+            <div class="flex flex-wrap justify-center gap-8">
                 
-                <div class="bg-dark-card p-6 rounded-lg border border-dark-border text-center flex flex-col items-center col-span-1 md:col-span-2 lg:col-span-2 link-card">
-                    <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/49594959" 
-                         alt="OSWE" 
-                         class="w-32 h-32 mb-4 rounded-full shadow-xl ring-4 ring-brand-500/50" 
-                         href='https://www.credential.net/6a3c86e2-1490-438a-8c0f-4e7a26001617#acc.ABw32E1q';"
-                    />
-                    <h3 class="text-xl font-bold text-readable-text mb-2">OSWE</h3>
-                    <p class="text-brand-500 font-medium mb-1">Offensive Security Web Expert</p>
-                </div>
+                <!-- Card 1 (OSWE) -->
+                <a 
+                    href="https://www.credential.net/6a3c86e2-1490-438a-8c0f-4e7a26001617#acc.ABw32E1q" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="block w-80"
+                >
+                    <!-- Added min-h-[16rem] and justify-start for uniform size and content alignment -->
+                    <div class="bg-dark-card p-6 rounded-xl border border-dark-border text-center flex flex-col items-center justify-start shadow-2xl transition duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-brand-500/20 cursor-pointer min-h-[16rem]">
 
-                
-                <div class="bg-dark-card p-6 rounded-lg border border-dark-border text-center flex flex-col items-center col-span-1 md:col-span-2 lg:col-span-2 link-card">
-                    <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/49594958" 
-                         alt="OSCP" 
-                         class="w-32 h-32 mb-4 rounded-full shadow-xl ring-4 ring-brand-500/50" 
-                         href='https://www.credly.com/badges/11d272ad-aac5-4cf4-b7ce-0cab32bca7a9/linked_in_profile';"
-                    />
-                    <h3 class="text-xl font-bold text-readable-text mb-2">OSCP</h3>
-                    <p class="text-brand-500 font-medium mb-1">Offensive Security Certificed Professional</p>
-                </div>
+                        <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/49594959" 
+                            alt="OSWE Badge" 
+                            class="w-32 h-32 mb-4 rounded-full shadow-xl ring-4 ring-brand-500/50 object-cover" 
+                            onerror="this.onerror=null; this.src='https://www.credential.net/6a3c86e2-1490-438a-8c0f-4e7a26001617#acc.ABw32E1q';"
+                        />
+                        <h3 class="text-xl font-bold text-readable-text mb-2">OSWE</h3>
+                        <p class="text-brand-500 font-medium mb-1">Offensive Security<br>Web Expert</p>
+                    </div>
+                </a>
 
+                <!-- Card 2 (OSCP - Corrected details) -->
+                <a 
+                    href="https://www.credly.com/badges/11d272ad-aac5-4cf4-b7ce-0cab32bca7a9/linked_in_profile" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="block w-80"
+                >
+                    <!-- Added min-h-[16rem] and justify-start for uniform size and content alignment -->
+                    <div class="bg-dark-card p-6 rounded-xl border border-dark-border text-center flex flex-col items-center justify-start shadow-2xl transition duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-brand-500/20 cursor-pointer min-h-[16rem]">
+
+                        <!-- Updated image source and alt text for OSCP -->
+                        <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/49594958" 
+                            alt="OSCP Badge" 
+                            class="w-32 h-32 mb-4 rounded-full shadow-xl ring-4 ring-brand-500/50 object-cover" 
+                            onerror="this.onerror=null; this.src='https://www.credly.com/badges/11d272ad-aac5-4cf4-b7ce-0cab32bca7a9/linked_in_profile';"
+                        />
+                        <h3 class="text-xl font-bold text-readable-text mb-2">OSCP</h3>
+                        <!-- Corrected credential title -->
+                        <p class="text-brand-500 font-medium mb-1">Offensive Security<br>Certified Professional</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
